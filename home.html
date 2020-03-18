@@ -14,56 +14,89 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <img class="page-header__logo" src="img/logo.jpg" alt="Союз женщин России" width="76" height="76">
+        <div class="page-header__top">
+          <img class="page-header__logo" src="img/logo.jpg" alt="Союз женщин России" width="76" height="76">
 
-        <span class="page-header__slogan">Союз женщин России</span>
+          <span class="page-header__slogan">Союз женщин России</span>
 
-        <a class="page-header__contacts" href="tel:+74012958388"> +7 4012 95-83-88</a>
+          <a class="page-header__contacts" href="tel:+74012958388">
+            <img src="img/icon__phone.svg" alt="" width="28" height="28">
+            +7 4012 95-83-88
+          </a>
+        </div>
 
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <ul class="main-nav__list nav__list">
-            <li class="nav__item">
-              <a href="about.html">О нас</a>
+        <div class="page-header__bottom">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <ul class="main-nav__list nav__list">
+              <li class="nav__item">
+                <a href="about.html">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="regulation.html">Устав</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="documents.html">Документы</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="photogallery.html">Фотогалерея</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="page-header__social">
+            <li>
+              <a href="#">
+                <img src="img/icon__soc-vk.svg" alt="Социальная есть Вконтакте" width="28" height="28">
+              </a>
             </li>
 
-            <li class="nav__item">
-              <a href="regulation.html">Устав</a>
+            <li>
+              <a href="#">
+                <img src="img/icon__soc-fb.svg" alt="Социальная есть Facebook" width="28" height="28">
+              </a>
             </li>
 
-            <li class="nav__item">
-              <a href="documents.html">Документы</a>
+            <li>
+              <a href="#">
+                <img src="img/icon__soc-you.svg" alt="Социальная есть youtube" width="28" height="28">
+              </a>
             </li>
 
-            <li class="nav__item">
-              <a href="photogallery.html">Фотогалерея</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="contacts.html">Контакты</a>
+            <li>
+              <a href="#" aria-label="Социальная есть Instagram">
+                <img src="img/icon__soc-inst.svg" alt="" width="28" height="28">
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
 
     <main class="page-main">
       <section class="intro">
-        <div class="intro__wrapper">
-          <div class="container">
+        <div class="container">
+          <div class="intro__wrapper">
             <h1 class="intro__title">Союз женщин</h1>
 
             <span class="intro__text" class="">Калининградской области</span>
 
-            <a class="button" href="/projects.html">Наши проекты</a>
+            <a class="intro__link button" href="/projects.html">Наши проекты</a>
 
-            <a class="button button--white" href="/events.html">События</a>
+            <a class="intro__link button button--white" href="/events.html">События</a>
           </div>
         </div>
       </section>
 
       <section class="about">
-        <div class="about__wrapper">
-          <div class="container">
+        <div class="container">
+          <div class="about__wrapper">
             <div class="about__text">
               <h2 class="about__title">О союзе</h2>
 
@@ -95,8 +128,8 @@
       </section>
 
       <section class="projects">
-        <div class="projects__wrapper">
-          <div class="container">
+        <div class="container">
+          <div class="projects__wrapper">
             <h2 class="projects__title">Наши проекты</h2>
 
             <ul class="projects__list">
@@ -160,20 +193,22 @@
       </section>
 
       <section class="events">
-        <div class="events__wrapper">
-          <div class="container">
-            <h2 class="events__title">События и мероприятия</h2>
+        <div class="container">
+          <div class="events__wrapper">
+            <div class="events__head">
+              <h2 class="events__title">События и мероприятия</h2>
 
-            <div class="events__controls">
-              <button class="events__arrow events__arrow--left" type="button" aria-label="Предыдущий">
-                <-
-              </button>
-              <button class="events__arrow events__arrow--right" type="button" aria-label="Следующий">
-                ->
-              </button>
+              <div class="events__controls">
+                <button class="events__arrow events__arrow--left" type="button" aria-label="Предыдущий">
+                  <img src="img/icon__arrow-left.svg" alt="" width="55" height="55">
+                </button>
+                <button class="events__arrow events__arrow--right" type="button" aria-label="Следующий">
+                  <img src="img/icon__arrow-right.svg" alt="" width="55" height="55">
+                </button>
+              </div>
             </div>
 
-            <div class="events__list">
+            <div class="events__list owl-carousel">
               <div class="events__item">
                 <img src="img/events-1.jpg" alt="Фестиваль беременности и материнства «Моя мама»" width="540" height="400">
                 <p>Фестиваль беременности и материнства «Моя мама»</p>
@@ -199,84 +234,88 @@
       </section>
 
       <section class="news">
-        <div class="news__wrapper">
-          <div class="container">
+        <div class="container">
+          <div class="news__wrapper">
             <div class="news__head">
               <h2 class="news__title">Новости</h2>
-              <a class="button button--big" href="/news.html">все новости</a>
+              <a class="button button--big" href="/news.html">Все Новости</a>
             </div>
 
-            <div class="news__own">
-              <a class="news__link" href="/news-item.html">
-                <img src="img/news-1.jpg" alt="Семинар Milos" width="255" height="75">
-              </a>
-
-              <div>
-                <a class="news__head-link" href="/news-item.html">
-                  Семинар Milos
+            <div class="news__body">
+              <div class="news__own">
+                <a class="news__link" href="/news-item.html">
+                  <img src="img/news-1.jpg" alt="Семинар Milos" width="255" height="75">
                 </a>
 
-                <time class="news__date">
-                  27.01.2019
-                </time>
+                <div class="news__own-body">
+                  <div>
+                    <a class="news__head-link" href="/news-item.html">
+                      Семинар Milos
+                    </a>
+
+                    <time class="news__date">
+                      27.01.2019
+                    </time>
+                  </div>
+
+                  <p class="news__text">
+                    Наши сотрудники прошли последний семинар от компании Milos.
+                    Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием...
+                  </p>
+
+                  <a class="news__link" href="/news-item.html">
+                    Читать полностью...
+                  </a>
+                </div>
               </div>
 
-              <p class="news__text">
-                Наши сотрудники прошли последний семинар от компании Milos.
-                Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием...
-              </p>
+              <ul class="news__list">
+                <li class="news__item">
+                  <a class="news__head-link" href="/news-item.html">
+                    Выставка rolight+Sound NAMM Russia 2016
+                  </a>
+                  <p class="news__text">
+                    30 контрактов, тысячи восторженных посетителей...
+                  </p>
+                  <div class="news__item-body">
+                    <a class="news__link" href="/news-item.html">
+                      <img src="img/news-2.jpg" alt="Выставка rolight+Sound NAMM Russia 2016" width="128" height="115">
+                    </a>
 
-              <a class="news__link" href="/news-item.html">
-                Читать полностью...
-              </a>
+                    <time class="news__date">
+                      27.01.2019
+                    </time>
+                  </div>
+                </li>
+
+                <li class="news__item">
+                  <a class="news__head-link" href="/news-item.html">
+                    Семинар Robe
+                  </a>
+                  <p class="news__text">
+                    30 января 2017 года наши сотрудники побывали в Берлине..
+                  </p>
+                  <div class="news__item-body">
+                    <a class="news__link" href="/news-item.html">
+                      <img src="img/news-3.jpg" alt="Семинар Robe" width="128" height="115">
+                    </a>
+
+                    <time class="news__date">
+                      27.01.2019
+                    </time>
+                  </div>
+                </li>
+              </ul>
             </div>
-
-            <ul class="news__list">
-              <li>
-                <a class="news__head-link" href="/news-item.html">
-                  Выставка rolight+Sound NAMM Russia 2016
-                </a>
-                <p class="news__text">
-                  30 контрактов, тысячи восторженных посетителей...
-                </p>
-                <div>
-                  <a class="news__link" href="/news-item.html">
-                    <img src="img/news-2.jpg" alt="Выставка rolight+Sound NAMM Russia 2016" width="128" height="115">
-                  </a>
-
-                  <time class="news__date">
-                    27.01.2019
-                  </time>
-                </div>
-              </li>
-
-              <li>
-                <a class="news__head-link" href="/news-item.html">
-                  Семинар Robe
-                </a>
-                <p class="news__text">
-                  30 января 2017 года наши сотрудники побывали в Берлине..
-                </p>
-                <div>
-                  <a class="news__link" href="/news-item.html">
-                    <img src="img/news-3.jpg" alt="Семинар Robe" width="128" height="115">
-                  </a>
-
-                  <time class="news__date">
-                    27.01.2019
-                  </time>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="container">
-          <div class="page-footer__contacts">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__top">
             <a class="page-footer__phone" href="tel:+74012958388">
               +7 4012 95-83-88
             </a>
@@ -288,8 +327,8 @@
             </a>
           </div>
 
-          <div class="page-footer__nav">
-            <ul class="nav__list">
+          <div class="page-footer__middle">
+            <ul class="page-footer__nav nav__list">
               <li>
                 <a href="about.html">О компании</a>
               </li>
@@ -307,17 +346,42 @@
               </li>
             </ul>
 
+            <ul class="page-footer__social">
+              <li>
+                <a href="#">
+                  <img src="img/icon__soc-vk.svg" alt="Социальная есть Вконтакте" width="28" height="28">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="img/icon__soc-fb.svg" alt="Социальная есть Facebook" width="28" height="28">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="img/icon__soc-you.svg" alt="Социальная есть youtube" width="28" height="28">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" aria-label="Социальная есть Instagram">
+                  <img src="img/icon__soc-inst.svg" alt="" width="28" height="28">
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div class="page-footer__copyright">
-            <span>Официальный cайт СЖР © 2015-2019</span>
+          <div class="page-footer__bottom">
+            <span class="page-footer__copyright">Официальный cайт СЖР © 2015-2019</span>
             <span class="page-footer__developers">Разработка и дизайн - ProДвиж</span>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/lib/jquery-3.3.1.slim.min.js"></script>
     <script src="js/lib/owl.carousel.min.js"></script>
     <script src="js/lib/fancybox.min.js"></script>
     <script src="js/script.js"></script>

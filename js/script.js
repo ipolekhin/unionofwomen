@@ -4,10 +4,9 @@ $(function() {
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     autoWidth: true,
-    center: true,
-    items: 3,
+    items: 2,
     loop: true,
-    nav: false,
+    nav: true,
     dots: false,
     responsive: {
       0: {
@@ -25,3 +24,5 @@ $(function() {
     }
   });
 });
+
+
