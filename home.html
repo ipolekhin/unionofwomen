@@ -82,7 +82,7 @@
               </ul>
 
               <a class="page-header__phone page-header__phone--white" href="tel:+74012958388">
-                <img src="img/icon__phone.svg" alt="" width="28" height="28">
+                <img src="img/icon__phone-white.svg" alt="" width="28" height="28">
                 +7 4012 95-83-88
               </a>
             </div>
@@ -213,18 +213,7 @@
       <section class="events">
         <div class="container">
           <div class="events__wrapper">
-            <div class="events__head">
-              <h2 class="events__title">События и мероприятия</h2>
-
-              <div class="events__controls">
-                <button class="events__arrow events__arrow--left" type="button" aria-label="Предыдущий">
-                  <img src="img/icon__arrow-left.svg" alt="" width="55" height="55">
-                </button>
-                <button class="events__arrow events__arrow--right" type="button" aria-label="Следующий">
-                  <img src="img/icon__arrow-right.svg" alt="" width="55" height="55">
-                </button>
-              </div>
-            </div>
+            <h2 class="events__title">События и мероприятия</h2>
 
             <div class="events__list owl-carousel">
               <div class="events__item">
@@ -262,7 +251,10 @@
             <div class="news__body">
               <div class="news__own">
                 <a class="news__link" href="/news-item.html">
-                  <img src="img/news-1.jpg" alt="Семинар Milos" width="255" height="75">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/news-1-mobile.jpg">
+                    <img src="img/news-1.jpg" alt="Семинар Milos" width="255" height="75">
+                  </picture>
                 </a>
 
                 <div class="news__own-body">
