@@ -530,7 +530,7 @@ img {
   font-family: "Euclid Flex", "Arial", sans-serif;
   font-size: 36px;
   line-height: 46px;
-  color: #979797; }
+  color: #005bc1; }
 
 .intro__link {
   margin-top: 21px; }
@@ -566,7 +566,7 @@ img {
 .about {
   color: #e0e6ee;
   background: #005bc1;
-  background-image: url("../img/about-bg.png");
+  background-image: url("../img/about-bg-large.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -644,6 +644,8 @@ img {
     border-radius: 50%; }
 
 @media (max-width: 1199px) {
+  .about {
+    background-image: url("../img/about-bg.png"); }
   .about__wrapper {
     padding: 15px 0 30px; }
   .about__description {
